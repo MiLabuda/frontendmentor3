@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Spartan', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    background: hsl(204, 43%, 93%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper{
+    background:url("/images/bg-pattern-top-mobile.svg") no-repeat top left, url("/images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
+    background-color: white;
+
+    min-width: 300px;
+
+    max-width: 600px;
+    padding: 0% 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.recommendations{
+    margin-top: 16.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.recommendations__title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(80,31,79);
+    text-align: center;    
+}
+.recommendations__text{
+    color: grey;
+    font-size: 1.4rem;
+    padding-top: 6.0%;
+    text-align: center;
+    line-height: 2.7rem;
+}
+.ratings{
+    padding-top: 7%;
+    min-width: 100%;
+    
+}
+.ratings__item{
+    background: rgb(247,242,247);
+    border-radius: 5px;
+    padding: 3%;
+    margin-top: 3%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratings__stars{
+
+}
+.ratings__text{
+    color: rgb(80,31,79);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-top: 3%;
+}
+.opinions{
+    margin: 10% 0 30% 0;
+}
+.opinions__item{
+    background:rgb(81,31,81);
+    border-radius: 5px;
+    padding: 10% 8%;
+    margin-top: 3%;
+}
+.row{
+    display: flex;
+}
+.opinions__image{
+    width: 20%;
+    height: 20%;
+    border-radius: 50px;
+}
+.opinions__text{
+    margin-top: 10%;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+  /*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ 
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
