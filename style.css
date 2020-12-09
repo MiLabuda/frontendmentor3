@@ -16,7 +16,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .wrapper{
@@ -24,7 +24,6 @@ html{
     background-color: white;
 
     min-width: 300px;
-
     max-width: 600px;
     padding: 0% 5%;
 
@@ -33,6 +32,17 @@ html{
     align-items: center;
     justify-content: center;
 }
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 4% 6%;
+    width: 100%;
+}
+
+/*=====RECOMMENDATIONS=====*/
 .recommendations{
     margin-top: 16.5%;
     display: flex;
@@ -53,17 +63,17 @@ html{
     text-align: center;
     line-height: 2.7rem;
 }
+
+/*=====RATINGS=====*/
 .ratings{
     padding-top: 7%;
     min-width: 100%;
-    
 }
 .ratings__item{
     background: rgb(247,242,247);
     border-radius: 5px;
     padding: 3%;
     margin-top: 3%;
-
 
     display: flex;
     flex-direction: column;
@@ -72,7 +82,7 @@ html{
 }
 
 .ratings__stars{
-
+    padding: 0 2% 0 0;
 }
 .ratings__text{
     color: rgb(80,31,79);
@@ -80,51 +90,119 @@ html{
     font-weight: 700;
     padding-top: 3%;
 }
-.opinions{
-    margin: 10% 0 30% 0;
-}
+
+/*=====OPINIONS=====*/
+
 .opinions__item{
     background:rgb(81,31,81);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10% 8%;
-    margin-top: 3%;
+    margin: 3% 0;
 }
-.row{
-    display: flex;
-}
+
 .opinions__image{
     width: 20%;
     height: 20%;
     border-radius: 50px;
 }
 .opinions__text{
-    margin-top: 10%;
+    margin-top: 5%;
     color: white;
     font-size: 1.3rem;
-    line-height: 1.7rem;
+    line-height: 2.5rem;
+}
+.opinions__name{
+    color: white;
+    font-size: 1.8rem;
+}
+.opinions__status{
+    color:rgb(234,102,161);
+    padding: 4% 0 0 0;
+    font-size: 1.8rem;
 }
 
   /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-
-}
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+    .recommendations__title{
+        font-size: 5rem;
+    }
+    .recommendations__text{
+        font-size: 2.4rem;
+        line-height: 2.7rem;
+    }
 
 }
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) {
+    .wrapper{
+        background:url("/images/bg-pattern-top-desktop.svg") no-repeat top left, url("/images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+        background-color: white;
+        max-width: 1400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .recommendations{
+        padding: 0 30% 0 0;
+        margin: 15% 0 0 0;
+    }
+    .recommendations__title{
+        font-size: 4rem;
+        text-align: left;
 
-}
+    }
+    .recommendations__text{
+        text-align: left;
+    }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
- 
+    .ratings__item{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 150px auto;
+    }
+    .rating__star{
+        padding: 0 0 0 3%;
+    }
+    .ratings__text{
+        text-align: left;
+    }
+    .ratings ul li:nth-child(2){
+        transform: translateX(5%);
+    }
+    .ratings ul li:last-child{
+        transform: translateX(10%);
+    
+    }
 
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
+    /*=====OPINIONS=====*/
+    .opinions{
+        grid-column: span 2;
+        margin: 3% 0 30px 0;
+    }
+    .opinions__image{
+        grid-row: span 2;
+    }
+    .opinions__items{
+        padding: 10% 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .opinions__item{
+        max-width: 32%;
+        padding: 5% 3%;
+        margin-top: 0%;
+    }
+    .opinions__items li:nth-child(2){
+        transform: translateY(5%);   
+    }
+    .opinions__items li:last-child{
+        transform: translateY(10%);       
+    }
+    .opinions__name{
+        font-size: 1.4rem;
+    }
+    .opinions__status{
+        font-size: 1.4rem;
+    }
 }
