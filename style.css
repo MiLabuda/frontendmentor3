@@ -20,7 +20,7 @@ html{
 }
 
 .wrapper{
-    background:url("/images/bg-pattern-top-mobile.svg") no-repeat top left, url("/images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
+    background:url("images/bg-pattern-top-mobile.svg") no-repeat top left, url("images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
     background-color: white;
 
     min-width: 300px;
@@ -135,7 +135,7 @@ html{
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     .wrapper{
-        background:url("/images/bg-pattern-top-desktop.svg") no-repeat top left, url("/images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+        background:url("images/bg-pattern-top-desktop.svg") no-repeat top left, url("images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
         background-color: white;
         max-width: 1400px;
         display: grid;
